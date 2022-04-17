@@ -1,6 +1,9 @@
 import React from "react";
+import Header from "@components/Header";
+import Body from "@components/Body";
+import Card from "@components/Card";
 
-import { Header, Main, Cards, Footer } from "@components/css";
+// import { Header, Main, Cards, Footer } from "@components/css";
 
 const Home: React.FC = () => {
     return (
@@ -9,12 +12,15 @@ const Home: React.FC = () => {
                 display: "flex",
                 flexDirection: "column",
                 minHeight: "100vh",
+                backgroundColor: "#0C1116",
             }}
         >
             <Header />
-            <Main />
+            <Card />
+            {/* <Body /> */}
+            {/* <Main />
             <Cards />
-            <Footer />
+            <Footer /> */}
         </div>
     );
 };
